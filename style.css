@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(8, 8, 8);
+  color: rgb(251, 251, 251);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  opacity: 0.8;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  opacity: 0.8;
+  transition: all 0.3;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+hr {
+  width: 98%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    background-color: rgba(100, 228, 46, 0.995);
+    padding: 16px 20px;
+    border-radius: 0px 20px 0px 20px;
+    color: rgb(250, 251, 249);
+    backdrop-filter: blur(12px);
+    border: 1px;
+    border-color: rgba(255, 255, 255, 0.21);
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+  }
+}
+ul:hover {
+  opacity: 1;
+}
+
+.logo-header {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+}
+/* SEÇÃO 1 */
+section {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+}
+.section1 {
+  background-image: url(imagens/fundoheader.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    font-size: 12vh;
+    color: rgb(81, 129, 82);
+    mix-blend-mode: color-dodge;
+  }
+}
+.conteudoSecao1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .divBotoes {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 3px;
+  }
+}
+.buttonPrimario {
+  background-color: rgba(100, 228, 46, 0.995);
+  border-radius: 0px 12px 0px 12px;
+  color: white;
+  padding: 7px;
+  align-items: center;
+
+  .imgButton {
+    width: 20px;
+    gap: 2px;
+  }
+}
+.buttonSecundario {
+  background-color: rgba(255, 255, 255, 0.361);
+  color: rgb(3, 255, 3);
+  border-radius: 12px 0px 12px 0px;
+  padding: 7px;
+}
+/* SECÇÃO 2 */
+.section2 {
+  background-image: url(imagens/secao2fundo.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.tituloSecao2 {
+  text-align: center;
+  font-size: 10vh;
+  color: rgb(81, 129, 82);
+  mix-blend-mode: color-dodge;
+}
+
+.divCards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 0;
+
+  h3 {
+    font-size: 28px;
+    margin:0 0 15px 0;
+  }
+  p {
+    font-size: 15px;
+    margin: 0px;
+    line-height: 1.5;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.cardSolar, .cardEolica, .cardHidreletrica {
+  flex: 1;
+  max-width: 360px;
+  border-radius: 80px 0px 80px 0px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 30px 24px;
+  box-sizing: border-box;
+}
+.cardSolar{
+  background-color: rgba(254, 254, 2, 0.521);
+}
+.cardEolica{
+  background-color: rgba(1, 253, 1, 0.495);
+}
+.cardHidreletrica{
+  background-color: rgba(1, 1, 252, 0.484);
+}
+
+.secao3 {
+  background-image: url(imagens/trofeu.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+
+  P{
+    font-size: 30px;
+  }
+}
+
+.secaoTrabalhos {
+  text-align: center;
+  font-size: 10vh;
+  color: rgb(178, 208, 178);
+  mix-blend-mode: color-dodge;
+
+  p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+.imagensTrabalhos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 52px 0px 80px;
+  gap: 8px 0.5%;
+
+  img {
+    width: 24.5%;
+    border-radius: 12px 0px 12px 0px;
+    filter: saturate(0);
+
+    &:hover {
+      filter: saturate(1);
+    }
+  }
+}
